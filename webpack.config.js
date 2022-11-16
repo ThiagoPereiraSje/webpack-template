@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
-    index: './src/index.js',
+    index: './src/index.ts',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -19,6 +19,11 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
@@ -27,6 +32,9 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   devServer: {
     static: './dist',

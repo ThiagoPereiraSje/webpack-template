@@ -1,6 +1,6 @@
 import './style.css';
 import Icon from './icon.png';
-import printMe from './print.js';
+import printMe from './print';
 
 
 const div = document.createElement('div');
@@ -9,7 +9,7 @@ const icon = new Image();
 icon.src = Icon;
 
 const btn = document.createElement('button');
-btn.innerText = 'Não clique em mim';
+btn.innerText = 'Click here!';
 btn.onclick = printMe;
 
 div.appendChild(canvas);
