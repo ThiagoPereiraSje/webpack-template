@@ -1,10 +1,12 @@
-import './style.css';
-import Icon from './icon.png';
-import printMe from './print';
+import './index.css';
+import Icon from './img/icon.png';
+import { canvas } from './ui/canvas'
 
+function printMe() {
+  console.log('Imprima algo diferente!');
+}
 
 const div = document.createElement('div');
-const canvas = document.createElement('canvas');
 const icon = new Image();
 icon.src = Icon;
 
