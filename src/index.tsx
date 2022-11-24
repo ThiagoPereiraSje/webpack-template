@@ -1,17 +1,17 @@
-import './index.css';
-import Icon from './img/icon.png';
-import { canvas } from './ui/canvas'
+import "./index.css";
+import Icon from "./assets/imgs/icon.png";
+import { canvas } from "./ui/canvas";
 
 function printMe() {
-  console.log('Imprima algo diferente!');
+  console.log("Imprima algo diferente!");
 }
 
-const div = document.createElement('div');
+const div = document.createElement("div");
 const icon = new Image();
 icon.src = Icon;
 
-const btn = document.createElement('button');
-btn.innerText = 'Click here!';
+const btn = document.createElement("button");
+btn.innerText = "Click here!";
 btn.onclick = printMe;
 
 div.appendChild(canvas);
