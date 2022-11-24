@@ -2,8 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
   entry: {
     index: './src/index.tsx',
   },
@@ -35,9 +33,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-  },
-  devServer: {
-    static: './dist',
   },
   optimization: {
     runtimeChunk: 'single',
