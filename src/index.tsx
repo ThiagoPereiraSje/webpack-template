@@ -1,6 +1,6 @@
-import "./index.css";
-import Icon from "./assets/imgs/icon.png";
-import { canvas } from "./ui/canvas";
+import "src/index.css";
+import Icon from "src/assets/imgs/icon.png";
+import { canvas } from "src/ui/canvas";
 
 window.addEventListener("load", () => {
   function printMe() {
